@@ -3,16 +3,22 @@ import { BrowserModule, provideClientHydration, withEventReplay } from '@angular
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { provideHttpClient, withFetch } from '@angular/common/http';
+import { CharacterListComponent } from './character-list/character-list.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CharacterListComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [
+    provideHttpClient(withFetch()),
     provideClientHydration(withEventReplay())
   ],
   bootstrap: [AppComponent]
