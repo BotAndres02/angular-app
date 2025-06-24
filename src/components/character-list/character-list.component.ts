@@ -23,5 +23,8 @@ export class CharacterListComponent {
       }
     })
   }
+  showCharacterDetails(character: any) {
+    console.log('Mostrando detalles del personaje:', character.name);
+  }
 
 }
