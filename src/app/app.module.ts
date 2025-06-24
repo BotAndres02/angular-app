@@ -4,14 +4,18 @@ import { BrowserModule, provideClientHydration, withEventReplay } from '@angular
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { provideHttpClient, withFetch } from '@angular/common/http';
-import { CharacterListComponent } from './character-list/character-list.component';
-import { NavbarComponent } from './navbar/navbar.component';
+import { CharacterListComponent } from '../components/character-list/character-list.component';
+import { NavbarComponent } from '../components/navbar/navbar.component';
+import { HeroComponent } from '../components/hero/hero.component';
+import { FooterComponent } from '../components/footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    FooterComponent,
     CharacterListComponent,
-    NavbarComponent
+    NavbarComponent,
+    HeroComponent
   ],
   imports: [
     BrowserModule,
