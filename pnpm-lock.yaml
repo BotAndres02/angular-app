@@ -32,6 +32,9 @@ dependencies:
   '@angular/ssr':
     specifier: ^19.2.10
     version: 19.2.10(@angular/common@19.2.0)(@angular/core@19.2.0)(@angular/platform-server@19.2.0)(@angular/router@19.2.0)
+  '@fortawesome/fontawesome-free':
+    specifier: ^6.7.2
+    version: 6.7.2
   '@popperjs/core':
     specifier: ^2.11.8
     version: 2.11.8
@@ -2173,6 +2176,11 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
+
+  /@fortawesome/fontawesome-free@6.7.2:
+    resolution: {integrity: sha512-JUOtgFW6k9u4Y+xeIaEiLr3+cjoUPiAuLXoyKOJSia6Duzb7pq+A76P9ZdPDoAoxHdHzq6gE9/jKBGXlZT8FbA==}
+    engines: {node: '>=6'}
+    dev: false
 
   /@inquirer/checkbox@4.1.6(@types/node@18.18.0):
     resolution: {integrity: sha512-62u896rWCtKKE43soodq5e/QcRsA22I+7/4Ov7LESWnKRO6BVo2A1DFLDmXL9e28TB0CfHc3YtkbPm7iwajqkg==}
