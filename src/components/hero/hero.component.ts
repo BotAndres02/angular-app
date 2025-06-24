@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, AfterViewInit, Inject, PLATFORM_ID } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
+declare var bootstrap: any;
 
 @Component({
   selector: 'app-hero',
@@ -6,6 +8,18 @@ import { Component } from '@angular/core';
   templateUrl: './hero.component.html',
   styleUrl: './hero.component.css'
 })
-export class HeroComponent {
+export class HeroComponent implements AfterViewInit {
+  constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
 
+  ngAfterViewInit() {
+    if (isPlatformBrowser(this.platformId)) {
+      const myCarousel = document.getElementById('carouselExampleIndicators');
+      if (myCarousel) {
+        new bootstrap.Carousel(myCarousel, {
+          interval: 2000,
+          wrap: true
+        });
+      }
+    }
+  }
 }
