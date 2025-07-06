@@ -2,8 +2,8 @@
 @import 'bootstrap/dist/css/bootstrap.min.css';
 
 :root {
-  --color-primary: #007bff;
-  --color-primary-dark: #0056b3;
+  --color-primary: #FFC300;
+  --color-primary-dark: #B38600;
   --color-secondary: #232323;
   --color-accent: #28a745;
   --color-danger: #dc3545;
@@ -15,6 +15,7 @@
   --color-border: #444;
   --color-link: #007bff;
   --color-link-hover: #0056b3;
+  --color-card-bg: #fff;
   --color-footer-bg: #232323;
   --color-footer-divider: #444;
   --color-footer-link: #e0e0e0;

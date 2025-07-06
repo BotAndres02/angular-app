@@ -8,6 +8,10 @@ import { CharacterListComponent } from '../components/character-list/character-l
 import { NavbarComponent } from '../components/navbar/navbar.component';
 import { HeroComponent } from '../components/hero/hero.component';
 import { FooterComponent } from '../components/footer/footer.component';
+import { AboutLabsComponent } from '../components/about-labs/about-labs.component';
+import { ExampleFormComponent } from '../components/example-form/example-form.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { CourseComponent } from '../components/course/course.component';
 
 @NgModule({
   declarations: [
@@ -15,11 +19,15 @@ import { FooterComponent } from '../components/footer/footer.component';
     FooterComponent,
     CharacterListComponent,
     NavbarComponent,
-    HeroComponent
+    HeroComponent,
+    AboutLabsComponent,
+    CourseComponent,
+    ExampleFormComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [
     provideHttpClient(withFetch()),
