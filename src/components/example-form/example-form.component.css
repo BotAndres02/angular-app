@@ -5,7 +5,7 @@
 }
 
 .example-form-container {
-  background: #fff;
+  background: var(--color-card-bg);
   border-radius: 2rem;
   box-shadow: 0 8px 32px rgba(44, 44, 44, 0.08);
   padding: 3rem 2.5rem;
@@ -15,7 +15,7 @@
 }
 
 h2 {
-  color: var(--color-primary, #FFC300);
+  color: var(--color-primary);
   font-size: 2rem;
   margin-bottom: 2rem;
   text-align: center;
@@ -37,11 +37,11 @@ input,
 textarea {
   width: 100%;
   padding: 0.85rem 1rem;
-  border: 1.5px solid #e0e0e0;
+  border: 1.5px solid var(--color-text-light);
   border-radius: 1rem;
   font-size: 1rem;
-  background: #f8f9fa;
-  color: #232323;
+  background: var(--color-bg);
+  color: var(--color-secondary);
   transition: border-color 0.2s;
   outline: none;
   margin-bottom: 0.2rem;
@@ -49,12 +49,12 @@ textarea {
 
 input:focus,
 textarea:focus {
-  border-color: var(--color-primary, #FFC300);
+  border-color: var(--color-primary);
   background: #fffbe6;
 }
 
 .error {
-  color: var(--color-danger, #dc3545);
+  color: var(--color-danger);
   font-size: 0.95rem;
   margin-top: 0.2rem;
   margin-left: 0.2rem;
@@ -87,11 +87,11 @@ button[type="submit"]:disabled {
 
 .form-result {
   margin-top: 2.5rem;
-  background: #fffbe6;
+  background: var(--color-form-result-bg);
   border-radius: 1rem;
   padding: 1.5rem 1rem;
   box-shadow: 0 2px 8px rgba(255, 195, 0, 0.08);
-  color: #232323;
+  color: var(--color-secondary);
   font-size: 1.05rem;
 }
 

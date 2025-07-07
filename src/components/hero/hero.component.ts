@@ -16,7 +16,7 @@ export class HeroComponent implements AfterViewInit {
       const myCarousel = document.getElementById('carouselExampleIndicators');
       if (myCarousel) {
         new bootstrap.Carousel(myCarousel, {
-          interval: 2000,
+          interval: 3000,
           wrap: true
         });
       }

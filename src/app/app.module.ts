@@ -12,17 +12,19 @@ import { AboutLabsComponent } from '../components/about-labs/about-labs.componen
 import { ExampleFormComponent } from '../components/example-form/example-form.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { CourseComponent } from '../components/course/course.component';
+import { AppreciationComponent } from '../components/appreciation/appreciation.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FooterComponent,
-    CharacterListComponent,
     NavbarComponent,
     HeroComponent,
     AboutLabsComponent,
     CourseComponent,
-    ExampleFormComponent
+    ExampleFormComponent,
+    CharacterListComponent,
+    AppreciationComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
