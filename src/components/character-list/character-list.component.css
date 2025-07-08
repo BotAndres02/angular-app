@@ -42,7 +42,7 @@
 
 /* Tarjeta individual de personaje */
 .character-card {
-  background: #fff;
+  background: var(--color-card-bg);
   border-radius: 15px;
   overflow: hidden;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -85,7 +85,7 @@
   border-radius: 20px;
   font-size: 0.8rem;
   font-weight: 600;
-  color: #fff;
+  color: var(--color-card-bg);
   text-transform: uppercase;
 }
 
